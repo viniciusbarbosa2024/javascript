@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Seu resultado aqui</p>
+    </div>
+
+    <script>
+        var media =  Number.parseFloat(window.prompt('Qual foi a sua média na prova?'))
+
+        document.getElementsByTagName('p')[0].innerHTML = media >= 6 ? 'Aprovado' : 'Reprovado'
+
+        
+    </script>
+</body>
+</html>

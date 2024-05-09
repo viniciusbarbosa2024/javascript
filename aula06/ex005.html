@@ -8,14 +8,48 @@
         body {
             background-color: aqua;
         }
+
     </style>
 </head>
 <body>
-   <h1>Iniciando os estudos DOM </h1>
-   <p>Aqui vai o resultado</p>
+    <h1>Iniciando os estudos DOM </h1>
+
+    <p>Por tag</p>
+    <p>Aprendendo usar <strong>DOM</strong> em javascript</p>
+    <p id="teste-id">Por id</p>
+    <p name="teste-name">Por name</p>
+    <p class="teste-class">Por class</p>
+    <p id="teste-seletor">Por seletor</p>
+
     <div>Clique em mim</div>
+    <h2>Testes de navegação</h2>
    <script>
-        
+    //Navegação por Tag
+       
+        var p1 = window.document.getElementsByTagName('p')[0]  
+
+        document.write('<br>' + p1.innerText)
+
+    //Navegação por Id
+
+        var p2 = document.getElementById('teste-id')
+        document.write('<br>' + p2.innerText)
+
+    //Navegação por name
+
+        var p3 = document.getElementsByName('teste-name')[0]
+        document.write('<br>' + p3.innerText)
+
+    //Navegação por class
+
+        var p4 = document.getElementsByClassName('teste-class')[0]
+        document.write('<br>' + p4.innerHTML)
+
+    //Navegação por seletor
+
+        var p5 = document.querySelector('p#teste-seletor')
+        document.write('<br>' + p5.innerHTML)
+
    </script>
 </body>
 </html>
