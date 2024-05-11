@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#teste {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            text-align: center;
+            line-height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="teste">
+        Clique
+    </div>   
+    
+    <script>
+        document.getElementById('teste').addEventListener("click",clicar)
+        
+        function clicar() {
+            document.getElementById('teste').innerHTML = 'Você clicou'
+            document.getElementById('teste').style.backgroundColor = "red"
+            document.getElementById('teste').style.width = '400px'
+        }
+    </script>
+</body>
+</html>

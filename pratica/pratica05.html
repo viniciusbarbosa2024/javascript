@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;    
+            height: 100px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+        
+        div#tela {
+            width: 500px;
+            height: 100px;
+            background-color: lightgray;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="tela">
+
+    </div>
+    <div id="um">
+        1
+    </div>
+    <div id="dois">
+        2
+    </div>
+    <div id="mais">
+        +
+    </div>
+    <div id="igual">
+        =
+    </div>
+
+    <script>
+        document.querySelector('div#um').addEventListener("click",num1)
+
+        document.querySelector('div#dois').addEventListener("click",num2)
+
+        document.querySelector('div#mais').addEventListener("click",soma)
+
+        document.querySelector('div#igual').addEventListener("click",resultado)
+
+        
+        function num1() {
+            tela = document.querySelector('div#tela')
+            tela.innerHTML = tela.innerHTML + ' 1 '
+        }
+
+        function num2() {
+            tela = document.querySelector('div#tela')
+            tela.innerHTML = tela.innerHTML + ' 2 '
+        }
+
+        function soma() {
+            tela = document.querySelector('div#tela')
+            tela.innerHTML = tela.innerHTML + ' + '
+        }
+        
+        function resultado(){
+            tela = document.querySelector('div#tela')
+            tela.innerHTML = tela.innerHTML + ' = '
+        }
+    </script>
+</body>
+</html>
