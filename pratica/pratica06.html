@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="pais" id="ipais">
+    <input type="button" value="Verificar" onclick="verificação()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        var país = document.getElementById("ipais")
+
+        var res = document.getElementById('res')
+
+        function verificação() {
+            if (país.value != 'Brasil' ) {
+                res.innerHTML = 'Você é estrangeiro'
+            }
+
+        }
+    </script>
+</body>
+</html>
