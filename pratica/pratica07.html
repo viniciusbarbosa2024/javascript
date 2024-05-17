@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        menu {
+            display: none;
+        }
+        
+        li {
+            border: 1px solid black;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="menu()">
+        Ver menu
+    </div>
+    <menu>
+        <ul>
+            <li>Home</li>
+            <li>Quem somos</li>
+            <li>Fale conosco</li>
+        </ul>
+    </menu> 
+    
+    <script>
+        function menu() {
+            document.querySelector('menu').style.display = 'block'
+        }
+    </script>
+</body>
+</html>
