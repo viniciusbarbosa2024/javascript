@@ -2,8 +2,7 @@ function carregar() {
     var msg = document.getElementById('msg')
     var img = document.getElementById('img')
     var data = new Date()
-    //var hora = data.getHours()
-    var hora = 14
+    var hora = data.getHours()
     msg.innerHTML = `São ${hora} horas`
 
     if (hora>=0 && hora<12) {
@@ -14,5 +13,6 @@ function carregar() {
         document.body.style.backgroundColor = '#935E63'
     } else {
         img.src = 'imagens/noite.jpg'
+        document.body.style.backgroundColor = '#17282F'
     }
 }

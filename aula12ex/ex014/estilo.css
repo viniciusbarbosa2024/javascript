@@ -17,7 +17,6 @@ header h1 {
 
 section {
     max-width: 500px;
-    height: 500px;
     background-color: white;
     margin: auto;
     border-radius: 10px;
@@ -27,6 +26,11 @@ section {
 section img {
     width: 250px;
     border-radius: 50%;
+}
+
+section div {
+    text-align: center;
+    padding: 10px;
 }
 
 footer {
