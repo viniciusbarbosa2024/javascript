@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="teste()">Aperte</div>
+    <audio src="lambertos-sultans-ofswing-95ea0462.mp3" controls preload="metadata"></audio>
+
+    <script>
+        function teste() {
+            var mus = document.querySelector('audio')
+            mus.src = 'lambertos-the-final-cowntdown-b08abcd2.mp3'
+        }
+    </script>
+</body>
+</html>
