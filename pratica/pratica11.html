@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    </div>
+
+    <input type="button" value="Testar" onclick="teste()">
+    
+    <script>
+        function teste() {
+            var audio = document.createElement('audio')
+            audio.setAttribute('src', 'lambertos-sultans-ofswing-95ea0462.mp3')
+            audio.setAttribute('controls','')
+            document.querySelector('div').appendChild(audio)
+        }
+        
+       
+    </script>
+</body>
+</html>
