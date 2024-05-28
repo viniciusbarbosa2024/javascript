@@ -5,7 +5,11 @@ function tabuada() {
     var n = Number(num.value)
 
     if (num.value.length == 0) {
+        tab.innerHTML = ''
         window.alert('Por favor,digite um número')
+        var option = document.createElement('option')
+        tab.appendChild(option) 
+        option.text = 'Digite um número acima'
     } else{
         tab.innerHTML = ''
         for(var c = 1;c<=10;c++) {
