@@ -20,6 +20,7 @@ function feedback() {
 
         //Limpando input de adicionar números
         num.value = ''
+        res.innerHTML = ''
     }
 
 }

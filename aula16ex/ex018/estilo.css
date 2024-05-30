@@ -13,6 +13,7 @@ body {
 header h1 {
     text-align: center;
     color: white;
+    padding: 10px;
 }
 
 section {
@@ -26,6 +27,11 @@ section {
 
 section select {
     min-width: 100px;
+    margin: 10px 0px;
+}
+
+section div#res p {
+    line-height: 1.7em;
 }
 
 footer {
