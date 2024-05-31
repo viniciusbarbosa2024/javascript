@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-    <div onclick="amenu()">
+    <div onclick="cxmenu()">
         Ver menu
     </div>
     <menu>
@@ -32,24 +32,14 @@
     </menu> 
     
     <script>
-        function amenu() {
-            var menu = document.querySelector('menu')
-            var div = document.querySelector('div')
+        let menu = document.querySelector('menu')
 
-            menu.style.display = 'block'
-            
-            div.setAttribute('onclick','fmenu()')
-
-        }
-
-        function fmenu() {
-            var menu = document.querySelector('menu')
-            var div = document.querySelector('div')
-
-            menu.style.display = 'none'
-
-            div.setAttribute('onclick','amenu()')
-
+        function cxmenu() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
         }
     </script>
 </body>
