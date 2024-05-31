@@ -6,7 +6,7 @@ let res = document.getElementById('res')
 function feedback() {
 
     
-    if (num.value.length == 0 || num.value < 1 || num.value > 100 || n.indexOf(num.value) != -1) {
+    if (validarnum(num.value)) {
         window.alert('Valor inválido ou já adicionado na lista')
    
     } else {
@@ -20,6 +20,7 @@ function feedback() {
 
         //Limpando input de adicionar números
         num.value = ''
+        num.focus()
         res.innerHTML = ''
     }
 
@@ -50,6 +51,15 @@ function analizador() {
     
 
 }
+
+function validarnum(x) {
+    if (x.length == 0 || x < 1 || x > 100 || n.indexOf(x) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
 
 function maiorvalor() {
     n.sort()
